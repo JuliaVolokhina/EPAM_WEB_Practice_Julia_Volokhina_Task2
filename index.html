@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet", href="/dist/app.css">
+<script src="https://use.fontawesome.com/22e6e4aa8b.js"></script>
+<title>Task-2</title>
+</head>
+
+  <body>
+    <section class="main">
+      <div class="main__title" id="response"></div>
+      </section>
+      <section class="mode">
+        <div class="container">          
+          <div class="mode__item">
+
+            <div class="mode__item__allvoices">
+              <input type="radio" onclick="button1();"name="icon" id="voicesid"/>
+              <label for="voicesid">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="mode__item__allvoicesspan">All voices</span>
+            </label>
+          </div>
+          
+          <div class="mode__item__microphone">
+            <input type="radio" onclick="button2();"name="icon" id="microphoneid"/>
+            <label for="microphoneid">
+              <i class="fa fa-microphone" aria-hidden="true"></i>
+              <span class="mode__item__microphonespan">Microphone</span>
+          </label>
+        </div>
+        
+        <div class="mode__item__stream">
+          <input type="radio" onclick="button3();"name="icon" id="streamid"/>
+          <label for="streamid">
+            <i class="fa fa-play-circle" aria-hidden="true"></i>
+            <span class="mode__item__streamspan">Stream</span>
+          </label>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="/dist/app.js"></script>
+</body>  
+</html>
