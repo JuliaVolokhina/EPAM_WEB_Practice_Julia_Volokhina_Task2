@@ -1,5 +1,6 @@
 var io = require("socket.io-client")
 var socket = io.connect("https://voicy-speaker.herokuapp.com/");
+
 var users = io.sockets.clients();
 console.log(users);
 
@@ -13,3 +14,5 @@ socket.on('audioMessage', function (audioChunks) {
     const audio = new Audio(audioUrl);
     audio.play();
 });
+
+socket.emit('audioMessage', audioChunks);
