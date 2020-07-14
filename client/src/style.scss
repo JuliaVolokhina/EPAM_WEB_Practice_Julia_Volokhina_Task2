@@ -1,0 +1,62 @@
+$font-stack: Segoe UI,
+sans-serif;
+$color-shadow: rgba(172, 170, 170, 0.5);
+$color: rgb(0, 0, 0);
+$color-checked: rgb(199, 202, 197);
+
+.main__title {
+    font: 200% $font-stack;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -100%);
+}
+
+.container {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 25px $color-shadow;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.mode__item {
+    display: inline-flex;
+    margin: 0.5em -2em 0 0.5em;
+
+    &__allvoicesspan {
+        left: -70px;
+    }
+
+    &__microphonespan {
+        left: -60px;
+    }
+
+    &__streamspan {
+        left: -55px;
+    }
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+}
+
+label {
+    color: $color;
+    font-size: 50px;
+}
+
+label>span {
+    font-size: 14px;
+    position: relative;
+    top: 33px;
+    font-family: $font-stack;
+}
+
+input[type="radio"]:checked+label {
+    color: $color-checked;
+}
